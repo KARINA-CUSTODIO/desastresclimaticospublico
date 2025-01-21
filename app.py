@@ -1,5 +1,6 @@
 !pip install dash
 !pip install mapclassify
+!pip install gdown
 import dash
 from dash import html, dcc
 import plotly.express as px
@@ -9,8 +10,17 @@ import pandas as pd
 import altair as alt
 import geopandas as gpd
 from datetime import datetime
+import gdown
 
-desastre = pd.read_excel('/content/BD_Atlas_1991_2023_v1.0_2024.04.29 (1).xlsx')
+# Definindo o ID do arquivo
+file_id = '1abpoLbYvccx9-0g9lJ0BLiK-AMqKdP12'
+url = f'https://drive.google.com/uc?export=download&id={file_id}'
+
+# Baixando o arquivo
+gdown.download(url, '/content/BD_Atlas_1991_2023_v1.0_2024.04.29.xlsx', quiet=False)
+
+# Lendo o arquivo
+desastre = pd.read_excel('/content/BD_Atlas_1991_2023_v1.0_2024.04.29.xlsx')
 
 #limpando ano
 desastre['ano evento'] = pd.to_datetime(desastre['Data_Evento']).dt.year
