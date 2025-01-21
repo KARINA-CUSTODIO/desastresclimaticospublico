@@ -1,4 +1,7 @@
 dash
+mapclassify
+gdown
 plotly
 pandas
-gunicorn
+altair
+geopandas
