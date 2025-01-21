@@ -1,1 +1,1 @@
-web: gunicorn app:Analise municipios
+web: gunicorn app:app
