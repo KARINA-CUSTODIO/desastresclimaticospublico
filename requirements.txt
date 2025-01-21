@@ -1,3 +1,4 @@
+python==3.9
 dash==2.9.0
 mapclassify==2.4.0
 gdown==4.4.0
