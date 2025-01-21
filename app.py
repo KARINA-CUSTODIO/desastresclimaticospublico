@@ -10,6 +10,11 @@ import altair as alt
 import geopandas as gpd
 from datetime import datetime
 
+desastre = pd.read_excel('/content/BD_Atlas_1991_2023_v1.0_2024.04.29 (1).xlsx')
+
+#limpando ano
+desastre['ano evento'] = pd.to_datetime(desastre['Data_Evento']).dt.year
+
 def agrupando_municipio(df, colunas):
 
     # Agrupar por 'ano evento' e somar as colunas especificadas
