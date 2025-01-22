@@ -14,7 +14,7 @@ file_id = '1abpoLbYvccx9-0g9lJ0BLiK-AMqKdP12'
 url = f'https://drive.google.com/uc?export=download&id={file_id}'
 
 # Baixando o arquivo
-gdown.download(url, '/content/BD_Atlas_1991_2023_v1.0_2024.04.29.xlsx', quiet=False)
+gdown.download(url, 'BD_Atlas_1991_2023.xlsx', quiet=False)
 
 # Lendo o arquivo
 desastre = pd.read_excel('/content/BD_Atlas_1991_2023_v1.0_2024.04.29.xlsx')
