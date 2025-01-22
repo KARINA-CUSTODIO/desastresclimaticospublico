@@ -4,7 +4,5 @@ mapclassify==2.4.0
 gdown==4.4.0
 plotly==5.3.1
 altair==4.2.0
-geopandas==0.10.2
-numpy
-gunicorn
-
+numpy>=1.21
+gunicorn==20.1.0
