@@ -1,4 +1,5 @@
 import dash
+import os
 from dash import html, dcc
 import plotly.express as px
 import plotly.graph_objects as go
@@ -15,6 +16,10 @@ url = f'https://drive.google.com/uc?export=download&id={file_id}'
 
 # Baixando o arquivo
 gdown.download(url, 'BD_Atlas_1991_2023.xlsx', quiet=False)
+
+
+if not os.path.exists('BD_Atlas_1991_2023.xlsx'):
+    raise FileNotFoundError("O arquivo de dados não foi baixado corretamente.")
 
 # Lendo o arquivo
 desastre = pd.read_excel('/content/BD_Atlas_1991_2023_v1.0_2024.04.29.xlsx')
