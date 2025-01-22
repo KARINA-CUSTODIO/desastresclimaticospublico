@@ -1,6 +1,3 @@
-!pip install dash
-!pip install mapclassify
-!pip install gdown
 import dash
 from dash import html, dcc
 import plotly.express as px
