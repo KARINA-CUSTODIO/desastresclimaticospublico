@@ -1,3 +1,4 @@
+pandas==1.5.3
 dash==2.9.0
 mapclassify==2.4.0
 gdown==4.4.0
@@ -5,6 +6,5 @@ plotly==5.3.1
 altair==4.2.0
 geopandas==0.10.2
 numpy
-pandas==1.5.3
 gunicorn
 
