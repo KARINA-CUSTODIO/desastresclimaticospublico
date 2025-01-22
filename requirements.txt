@@ -4,7 +4,6 @@ gdown==4.4.0
 plotly==5.3.1
 altair==4.2.0
 geopandas==0.10.2
-numpy>
-=1.21.4,<1.22
+numpy
 pandas==1.5.3
 
